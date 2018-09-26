@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "fails-linux-only": "ELECTRON_ENABLE_STACK_DUMPING=1 node_modules/.bin/electron src/index.js",
+    "fails-linux-only": "ELECTRON_ENABLE_STACK_DUMPING=1 node src/index.js",
     "success": "electron src/selector.js"
   },
   "author": "Cameron Rollheiser <icrellik@gmail.com>",
