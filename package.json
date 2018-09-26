@@ -4,18 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "failure": "ELECTRON_ENABLE_STACK_DUMPING=1 node src/index.js",
+    "fails-linux-only": "ELECTRON_ENABLE_STACK_DUMPING=1 node_modules/.bin/electron src/index.js",
     "success": "electron src/selector.js"
   },
   "author": "Cameron Rollheiser <icrellik@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "electron": "2.0.9",
     "electron-rebuild": "^1.8.2",
     "electron-window": "0.8.1",
-    "heapdump": "^0.3.9"
-  },
-  "dependencies": {
+    "electron": "2.0.9",
+    "heapdump": "^0.3.9",
     "is-electron": "^2.1.0"
   }
 }

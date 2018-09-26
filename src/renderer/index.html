@@ -3,11 +3,16 @@
 <head>
 <meta charset="utf-8"/>
   <script>
-  const isElectron = require('is-electron');
-  console.log('Verify modules load:', isElectron());
-  require('heapdump');
+    // Just verifying that standard modules are loading within electron.
+    const isElectron = require('is-electron');
+    console.log('Verify modules load:', isElectron());
+
+    // The inclusion of a native modules when supplying an ipc channel
+    // causes the failure on linux.
+    require('heapdump');
   </script>
 </head>
 <body>
+  Success an electron browser window has opened.
 </body>
 </html>
